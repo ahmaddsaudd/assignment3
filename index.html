@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter word to check no. of vowels <input type="text" id="word"><br><br>
+    <button onclick="myfunction()">Submit</button>
+    <div id="result"></div>   
+</body>
+<script>
+    function myfunction(){
+        
+        var no=0
+        var word= document.getElementById("word").value
+        var length= (document.getElementById("word").value).length
+        for(let i=0; i<length; i++){
+            if(word[i]=="a" ||word[i]=="e" ||word[i]=="i" ||word[i]=="o" ||word[i]=="u" ){
+
+                no=no+1
+            }
+        }
+        document.getElementById("result").innerHTML=no
+        
+
+    }
+</script>
+</html>
+   
+   
+</body>
+
+</html>
